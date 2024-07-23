@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* scrollbar-color: white; */
+}
+
+
+
+body{
+    /* position: fixed; */
+    /* position: relative; */
+    height: 100vh;
+    background-image:  url(image_2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+header a{
+    text-decoration:none;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+header a:hover{
+    color: #63c7b2;
+}
+
+header{
+    position: relative;
+    /* position: fixed; */
+    padding: 0 2em;
+    /* background-color:rgba(43, 7, 7, 0.1); */
+    background-color:rgba(242, 238, 242, 0.1);
+    /* trasition mn color lcolor */
+}
+
+
+.navbar{
+    background: rgba(0, 0, 0, 0.308);
+    z-index: 1000;
+    position: fixed;
+    /* position: sticky; */
+    left:0.0em;
+    max-width: 2000px;
+    width: 100%;/*mohcine hahoza mochkil*/
+    height: 50px;
+    /* margin: 0 auto; */
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: space-between;
+    /* background: black; */
+    transition: background-color 0.4s ease-in-out;
+}
+
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #63c7b2;
+    /* border-bottom: #fff; */
+}
+.navbar .links_1 {
+    display: flex;
+    gap: 2em;
+}
+.navbar .burger-menu-button{
+    color: #fff;
+    font-size: 1.6em;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 0.9em;
+}
+
+.links_1  a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.action-button{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.5em 0.9rem;
+    border-radius: 7px;
+    outline: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+/* .burgeu-menu .links{ */
+    /* background-color: red; */
+    /* z-index: 1000; */
+/* } */
+
+/* hhhhhhhhh mohcine */
+.burgeu-menu .links a{
+    /* background-color: red; */
+    letter-spacing: 1px;
+}
+
+.action-button:hover{
+    background: #63c7b2;
+    color: black;
+    border: 1px solid #fff;
+    /* transform: scale(0.2); */
+}
+
+/*burgeu-menu*/
+
+.burgeu-menu{
+    display: none;
+    height:0;
+    /* height: 220px; */
+    position: absolute;
+    right: 2em;
+    top : 45px;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.308);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.5s c;
+    position: fixed;
+    z-index: 1100;
+}
+
+.burgeu-menu.open{
+    height: 220px;
+    /* position: fixed; */
+}
+
+.burgeu-menu .action-button{
+    width: 87%;
+    display: flex;
+    justify-content: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-left: auto;/*??? hadi 4i drtha bach n centre elements*/
+    margin-right: auto;;
+}
+
+.burgeu-menu li{
+    padding: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.divider{
+    height: 1px;
+    background: #fff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+/* section_1 main*/
+
+section{
+    padding: 100px 200px;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    /*hada jabto man body*/
+    background:#4070f4;
+    /* background-image:  url(image_2.jpeg); */
+    /* background:linear-gradient(135deg,#71b7e6,#9b59b6); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* align-items: center; */
+}
+
+.main a{
+    color: #fff;
+}
+
+.main h2{
+    color: #fff;
+    font-size: 1.7em;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.main h2 span{
+    display: inline-block;
+    margin: 5px 0;
+    color:#63c7b2;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+/* .main h1 span{
+    color:#63c7b2;
+} */
+
+
+.main h3{
+    color: #fff;
+    font-size: 1.7em;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.main-btn {
+    color: #fff;
+    /* background-color: #63c7b2; */
+    background-color: transparent;
+    border: 1px solid #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9em 1.90em;
+    letter-spacing: 1.1px;
+    border-radius: 15px;
+    margin: 30px 0;
+    transition: 0.7s ease; /*ta7awole*/ 
+}
+
+.main-btn:hover{
+    background-color: #63c7b2;
+    color: black;
+    transform: scale(1.1);/*kitzade l7akme dyalo b 1.1 <=> 11% */
+}
+
+/* fin dyal section main */
+    /* remarque  */
+/* debut dyal section tanya */
+
+
+.body
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;/*yes*/
+    align-items: center;
+    background:#4070f4;
+    /* background: red; */
+}
+
+.container {
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px; 
+    margin: 0 15px;
+    max-width: 900px;
+    /*ohadi 4adi dir lina dil ta7t box kaml */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.container header{
+    padding: 0px 0 3px 0;
+    /* background-color: red;*/
+    position: relative; 
+    font-size: 20px;        /*yes*/
+    font-weight: 600;
+    color: #333;
+}
+
+.container header::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 40px;        /*yes*/
+    left: 0;
+    bottom: -2px;
+    background-color: #4070f4;
+    border-radius: 8px;
+}
+
+.container form{
+    margin-top: 16px;
+    position: relative;
+    min-height: 410px;      /*yes*/
+    background-color: #fff;
+    /* overflow: hidden; */
+}
+
+.container form .dettails{
+    margin-top: 10px;   /*yes*/
+}
+
+.container form .id{
+    margin-top: 10px;   /*yes*/
+}
+
+.container form .title{
+    font-size: 16px;
+    font-weight: 500;   /*yes*/
+    margin: 6px 0;
+    color: #333;
+}
+
+.container form .fields{
+    display: flex;
+    justify-content: space-between; /*yes*/
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field{
+    margin: 5px 0;
+    display: flex;
+    width: calc(100% / 3 - 15px); /*yes*/
+    flex-direction: column;
+}
+
+form .fields .mohcine{
+    margin:2.5px 0;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+}
+
+
+
+.input-field label{
+    font-size: 12px;
+    font-weight: 500;   /*yes*/  
+    color: #2e2e2e;
+}
+
+.mohcine label{
+    font-size: 12px;
+    font-weight: 500;   /*yes*/  
+    color: #2e2e2e;
+}
+
+
+.input-field input,.input-field select {
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;    /*yes*/
+    font-weight: 400;
+    height: 42px;
+    padding: 0 15px;
+    margin: 8px 0;
+    color: #333;
+}
+
+.mohcine input{
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;    /*yes*/
+    font-weight: 400;
+    height: 42px;
+    padding: 0 15px;
+    margin: 8px 0;
+    color: #333;
+}
+
+/*hadi kadir lina dil ta7t iput*/
+
+.input-field input:is(:focus,:valid)
+{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4); 
+    /*yes*/
+}
+
+.mohcine input:is(:focus,:valid)
+{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4); 
+    /*yes*/
+}
+
+
+.input-field input[tyoe="date"]{
+    color: #707070; /*yes*/
+}
+.input-field input[tyoe="date"]:valid{
+    color: #333;    /*yes*/
+}
+
+
+/* .container form button , .back-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    background-color: #4070f4;
+    outline: none;                  
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 15px 0 0 0;
+    transition: all 0.7s ease;
+} */
+
+.container form button ,.body_2 .bottons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    background-color: #4070f4;
+    outline: none;                  
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 15px 0 0 0;
+    transition: all 0.7s ease;
+}
+
+.container form button a , .body_2 .bottons button a{
+    /* font-size: 1.1em; */
+    text-decoration: none;
+    color: #fff;
+}
+
+.container form button ,
+.body_2 .bottons button 
+{
+    font-size: 1em; /*yes*/
+    font-weight: 400;
+}
+
+
+.container form button:hover, .bottons .next-btn:hover ,.bottons .back-btn:hover{
+    background-color: #265df2;
+    font-weight: 500;
+    cursor: pointer;        /*yes*/
+    /* transform: scale(0.9); */
+}
+
+.container form button i, .body_2 .bottons i , .back-btn i{    /*yes*/ 
+    margin: 0 7px;
+}
+
+.body_2 .bottons{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;        /*yes*/
+    /* justify-content: center; */
+}
+
+.body_2 .bottons button, .back-btn{
+    margin-right: 14px;     /*yes*/
+}
+
+.bottons .back-btn i {
+    transform: rotate(180deg); /*yes*/
+
+}
+
+/* css dyal section membre de jury */
+.body_2{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#4070f4;
+}
+
+.container_2 {
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;              /*yes*/
+    margin: 0 15px;
+    max-width: 900px;
+    /*ohadi 4adi dir lina dil ta7t box kaml */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+.wrap{
+    /* background: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 30px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e4e1e1;
+}
+
+.info span{
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.info{
+    /* background: red; */
+    display: flex;
+    /* justify-content: space-between;
+    width:90%;
+    height: 30px;
+    margin-bottom: 10px;
+    /* border-radius: 5px; */
+}
+
+.info span{
+    width: 50%;
+    padding: 0;
+}
+
+/* .add{
+    text-decoration: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #8bc34a;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* dynamic class creation */
+
+/* .flex {
+    display: flex;
+    gap :4em;
+} */
+
+/* .inpu-group {
+    background: red;
+} */
+
+.inpu-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inpu-group input {
+    display: flex;
+    min-width: 150px;
+    width: 50%; 
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;    /*yes*/
+    font-weight: 400;
+    height: 42px;
+    padding: 0 15px;
+    margin: 8px 10px 0 0;
+    color: #333
+}
+
+
+/*hadi kadir lina dil ta7t iput*/
+
+.inpu-group input:is(:focus,:valid)
+{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4); 
+    /*yes*/
+}
+
+
+
+/* .delete{
+    text-decoration: none;
+    display: inline-block;
+    background:#f44336;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+} */
+
+/* fin dynamic class creation */
+
+/* fin css dyal section menbres de jury  */
+
+/* css dyal button */
+#btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background: #fa0;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    bottom: 12px;
+    right: 15px;
+    display: none; /* Décommentez cette ligne */
+}
+/*  fin css dyal button*/
+
+                    /* RESPONSIVE */
+/* debut RESPONSIVE  dyale section 1 */
+
+@media(max-width:880px)
+{
+    form .fields .ezzahi_1{
+        width: calc(100% / 3 - 15px);
+    }
+    form .fields .ezzahi_2{
+        width: 100%;
+    }
+    
+}
+
+@media(max-width:750px)
+{
+    form .fields .mohcine{
+        width: calc(100% / 2 - 15px);
+    }
+    /* form .fields .ezzahi_2{
+        width: 100%;
+    } */
+}
+
+@media(max-width:645px)
+{
+    form .fields .mohcine{
+        /* width: calc(100% / 3.75 - 15px); */
+        width: 48%;
+    }
+}
+
+@media(max-width:750px){
+    .container form{
+        overflow-y: scroll;
+    }
+    
+    .container form::-webkit-scrollbar{
+        display: none;
+    }
+    
+    
+    form .fields .input-field{
+        width: calc(100% / 2 - 15px);
+    }
+}
+@media(max-width:550px)
+{
+    form .fields .input-field{
+        width: 100%;
+    } 
+    form .fields .mohcine{
+        width: 100%;
+    } 
+}
+/* fin RESPONSIVE  dyale section 1 */
+
+
+/* fin dyal section 1 */
+
+/* remarque */
+
+
+/*RESPONSIVE  dyale header */
+@media(max-width :940px)
+{
+    header{
+        background: none;
+    }
+
+    .navbar .links_1 ,
+    .navbar .action-button{
+        display: none;
+    }
+    .navbar .burger-menu-button{
+        display: block;
+    }
+
+    .burgeu-menu{
+        display: block; 
+    }
+}
+/* fin RESPONSIVE  dyale header */
+
+
+/* debut  RESPONSIVE  dyale section lakhra*/
+
+
+/* emmmmmm  */
+
+
+/* fin  RESPONSIVE  dyale section lakhra*/
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .info {
+        display: none;
+        /* flex-direction: column;
+        align-items: flex-start;
+        height: auto; */
+    }
+
+    .flex {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .inpu-group input {
+        width: 100%;
+    }
+
+    .wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .delete {
+        width: 25px;
+        height: 25px;
+        font-size: 1.5rem;
+        position: relative;
+        left: -47%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container_2 {
+        padding: 20px;
+    }
+
+    .add {
+        width: 25px;
+        height: 25px;
+        font-size: 1.5rem;
+    }
+
+    .delete {
+        width: 25px;
+        height: 25px;
+        font-size: 1.5rem;
+        position: relative;
+        left: -47%;
+        margin-bottom: 15px;
+    }
+}
+                    /*FIN  RESPONSIVE */
